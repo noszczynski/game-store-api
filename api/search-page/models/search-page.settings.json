@@ -1,0 +1,18 @@
+{
+  "kind": "singleType",
+  "collectionName": "search_pages",
+  "info": {
+    "name": "Search page"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "searchPage": {
+      "type": "component",
+      "repeatable": false,
+      "component": "pages.page"
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/games-page",
+      "handler": "games-page.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/games-page",
+      "handler": "games-page.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/games-page",
+      "handler": "games-page.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

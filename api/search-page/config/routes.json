@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/search-page",
+      "handler": "search-page.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/search-page",
+      "handler": "search-page.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/search-page",
+      "handler": "search-page.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "kind": "singleType",
+  "collectionName": "games_pages",
+  "info": {
+    "name": "Games Page"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "gamesPage": {
+      "type": "component",
+      "repeatable": false,
+      "component": "pages.page"
+    }
+  }
+}

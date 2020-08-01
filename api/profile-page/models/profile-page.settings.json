@@ -1,0 +1,18 @@
+{
+  "kind": "singleType",
+  "collectionName": "profile_pages",
+  "info": {
+    "name": "Profile Page"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "profilePage": {
+      "type": "component",
+      "repeatable": false,
+      "component": "pages.page"
+    }
+  }
+}
