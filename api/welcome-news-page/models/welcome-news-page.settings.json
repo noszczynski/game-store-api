@@ -1,0 +1,53 @@
+{
+  "kind": "singleType",
+  "collectionName": "welcome_news_pages",
+  "info": {
+    "name": "Welcome News Page"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "firstCover": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "firstTitle": {
+      "type": "string"
+    },
+    "secondCover": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "secondTitle": {
+      "type": "string"
+    },
+    "firstPremiereDate": {
+      "type": "date"
+    },
+    "secondPremiereDate": {
+      "type": "date"
+    },
+    "firstGame": {
+      "model": "games"
+    },
+    "secondGame": {
+      "model": "games"
+    }
+  }
+}

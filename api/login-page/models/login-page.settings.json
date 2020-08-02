@@ -1,0 +1,41 @@
+{
+  "kind": "singleType",
+  "collectionName": "login_pages",
+  "info": {
+    "name": "Login Page"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "covers": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "loginTitle": {
+      "type": "string"
+    },
+    "registerTitle": {
+      "type": "string"
+    },
+    "registerCovers": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    }
+  }
+}
